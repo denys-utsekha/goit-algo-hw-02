@@ -13,6 +13,9 @@ def process_request():
     request_from_queue = queue.get()  
   print("Queue is empty!")
 
-while True:
-  generate_request()
-  process_request()
+try:
+  while True:
+    generate_request()
+    process_request()
+except KeyboardInterrupt:
+  print("Stopped")
