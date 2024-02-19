@@ -20,3 +20,7 @@ def is_palindrome(text: str) -> bool:
       break
 
   return res
+
+palindrome = input("Введіть текст: ")
+
+print(f'is_palindrome - {is_palindrome(palindrome)}')
